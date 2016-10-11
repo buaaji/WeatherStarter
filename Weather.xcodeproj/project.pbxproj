@@ -22,7 +22,7 @@
 		63D2F6501DA6977F00E2E770 /* UIProgressView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D2F63F1DA6977F00E2E770 /* UIProgressView+AFNetworking.m */; };
 		63D2F6511DA6977F00E2E770 /* UIRefreshControl+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D2F6411DA6977F00E2E770 /* UIRefreshControl+AFNetworking.m */; };
 		63D2F6521DA6977F00E2E770 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 63D2F6431DA6977F00E2E770 /* UIWebView+AFNetworking.m */; };
-		63F4784E1DAD30EA00EE3DB4 /* WeatherHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F4784D1DAD30EA00EE3DB4 /* WeatherHTTPClient.m */; };
+		63F478511DAD354600EE3DB4 /* WeatherHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F478501DAD354600EE3DB4 /* WeatherHTTPClient.m */; };
 		D233D07A16B400EF005212DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D233D07816B400EF005212DE /* InfoPlist.strings */; };
 		D233D07C16B400EF005212DE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D233D07B16B400EF005212DE /* main.m */; };
 		D233D08016B400EF005212DE /* WTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D233D07F16B400EF005212DE /* WTAppDelegate.m */; };
@@ -75,8 +75,8 @@
 		63D2F6411DA6977F00E2E770 /* UIRefreshControl+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIRefreshControl+AFNetworking.m"; sourceTree = "<group>"; };
 		63D2F6421DA6977F00E2E770 /* UIWebView+AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWebView+AFNetworking.h"; sourceTree = "<group>"; };
 		63D2F6431DA6977F00E2E770 /* UIWebView+AFNetworking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWebView+AFNetworking.m"; sourceTree = "<group>"; };
-		63F4784C1DAD30EA00EE3DB4 /* WeatherHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherHTTPClient.h; sourceTree = SOURCE_ROOT; };
-		63F4784D1DAD30EA00EE3DB4 /* WeatherHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherHTTPClient.m; sourceTree = SOURCE_ROOT; };
+		63F4784F1DAD354600EE3DB4 /* WeatherHTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherHTTPClient.h; sourceTree = "<group>"; };
+		63F478501DAD354600EE3DB4 /* WeatherHTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherHTTPClient.m; sourceTree = "<group>"; };
 		D233D06B16B400EF005212DE /* Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D233D07716B400EF005212DE /* Weather-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Weather-Info.plist"; sourceTree = "<group>"; };
 		D233D07916B400EF005212DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -209,10 +209,10 @@
 				D233D0D116B405D5005212DE /* NSDictionary+weather.m */,
 				D233D0CE16B405D5005212DE /* NSDictionary+weather_package.h */,
 				D233D0CF16B405D5005212DE /* NSDictionary+weather_package.m */,
-				63F4784C1DAD30EA00EE3DB4 /* WeatherHTTPClient.h */,
+				63F4784F1DAD354600EE3DB4 /* WeatherHTTPClient.h */,
+				63F478501DAD354600EE3DB4 /* WeatherHTTPClient.m */,
 				D233D0CA16B405C3005212DE /* WeatherAnimationViewController.h */,
 				D233D0CB16B405C3005212DE /* WeatherAnimationViewController.m */,
-				63F4784D1DAD30EA00EE3DB4 /* WeatherHTTPClient.m */,
 				D233D07E16B400EF005212DE /* WTAppDelegate.h */,
 				D233D07F16B400EF005212DE /* WTAppDelegate.m */,
 				D233D09216B4011B005212DE /* WTTableViewController.h */,
@@ -310,7 +310,7 @@
 				D233D0CC16B405C3005212DE /* WeatherAnimationViewController.m in Sources */,
 				63D2F64F1DA6977F00E2E770 /* UIImageView+AFNetworking.m in Sources */,
 				D233D0D216B405D5005212DE /* NSDictionary+weather_package.m in Sources */,
-				63F4784E1DAD30EA00EE3DB4 /* WeatherHTTPClient.m in Sources */,
+				63F478511DAD354600EE3DB4 /* WeatherHTTPClient.m in Sources */,
 				63D2F6441DA6977F00E2E770 /* AFHTTPSessionManager.m in Sources */,
 				63D2F64A1DA6977F00E2E770 /* AFAutoPurgingImageCache.m in Sources */,
 				63D2F6471DA6977F00E2E770 /* AFURLRequestSerialization.m in Sources */,
