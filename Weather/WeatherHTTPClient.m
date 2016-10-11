@@ -35,5 +35,75 @@ static NSString * const WorldWeatherOnlineURLString = @"http://api.worldweathero
     return self;
 }
 
+- (void) updateWeatherAtLocation:(CLLocation *)location forNumberOfDays:(NSUInteger)number {
+    NSMutableDictionary *parameters = [NSMutableDictionary dictionary];
+    parameters[@"num_of_days"] = @(number);
+    parameters[@"q"] = [NSString stringWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+    parameters[@"format"] = @"json";
+    parameters[@"key"] = WorldWeatherOnlineAPIKey;
+    
+    [self GET:@"weather.ashx" parameters:parameters success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        if ([self.delegate respondsToSelector:@selector(weatherHTTPClient:didUpdateWithWeather:)]){
+            [self.delegate weatherHTTPClient:self didUpdateWithWeather:responseObject];
+        }
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        if ([self.delegate respondsToSelector:@selector(weatherHTTPClient:didFailWithError:)]) {
+            [self.delegate weatherHTTPClient:self didFailWithError:error];
+        }
+    }];
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @end

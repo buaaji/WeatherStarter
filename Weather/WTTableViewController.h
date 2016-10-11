@@ -9,8 +9,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherHTTPClient.h"
 
-@interface WTTableViewController : UITableViewController<NSXMLParserDelegate, CLLocationManagerDelegate, UIActionSheetDelegate>
+@interface WTTableViewController : UITableViewController<NSXMLParserDelegate, CLLocationManagerDelegate, UIActionSheetDelegate, WeatherHTTPClientDelegate>
 
 // Actions
 - (IBAction)clear:(id)sender;
@@ -19,5 +20,7 @@
 - (IBAction)xmlTapped:(id)sender;
 - (IBAction)clientTapped:(id)sender;
 - (IBAction)apiTapped:(id)sender;
+
+@property (nonatomic, strong) CLLocationManager *locationManager;
 
 @end
